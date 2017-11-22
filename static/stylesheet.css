@@ -1,0 +1,16 @@
+body{
+    background-color: deeppink;
+}
+
+/*h1{*/
+    /*border-color: blueviolet;*/
+    /*border-bottom-width: thick;*/
+    /*color: chartreuse;*/
+/*}*/
+
+h1{
+    border-bottom: blueviolet;
+    border-bottom-width: thick;
+    border-bottom-style: groove;
+    color: chartreuse;
+}
