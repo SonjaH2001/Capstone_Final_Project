@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>splash_page</title>
+    <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
+    <!--<link rel="stylesheet" type="text/css" href="static/style_sheet.css">-->
+
+</head>
+<body>
+<h1>Welcome to the Amazing World of Tutor Life</h1>
+
+<h2>Get yerself some help with tech stuff... </h2>
+
+    {% for tutor in tutors %}
+    <h2> Name: {{ tutor.name }}<span> is here today from: {{ tutor.availability}}</span></h2>
+    <h3> {{ tutor.courses }}</h3>
+    <br><br>
+    {% endfor %}
+    <!--need span or div or sumpin-->
+    <p>All students please sign in here</p>
+    <form action="/student_id" method="post" >
+       <!--<button>Student Sign In</button>-->
+        <label for="studentName">First and Last name:</label>
+        <input type="text" name="studentName" size="15" maxlength="40" required="required"/>
+        <br><br>
+        <label for="starId">Star ID:</label>
+        <input type="password" name="starId" size="15" maxlength="8" required="required"/>
+        <br><br>
+        <input type="submit" name="Submit" value="Submit ID" />
+
+    </form>
+
+<!--NEED TO&ndash;&gt; route the submit button to page for testing-->
+<!--add the database to track star ID-->
+<!--and so much more.-->
+
+</body>
+</html>
