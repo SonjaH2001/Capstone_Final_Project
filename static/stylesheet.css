@@ -25,3 +25,8 @@ h1{
     width: 25%;
     float: right;"
 }
+
+.signIn_header {
+    font-size: 100%;
+    text-align: center;
+}
