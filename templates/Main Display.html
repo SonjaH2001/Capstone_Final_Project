@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>splash_page</title>
-    <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
-    <!--<link rel="stylesheet" type="text/css" href="static/style_sheet.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="/static/stylesheet.css">-->
+    <link rel="stylesheet" type="text/css" href="static/stylesheet.css">
 
 </head>
 <body>
+
 <h1>Welcome to the Amazing World of Tutor Life</h1>
 
+<div id="sub_title">
 <h2>Get yerself some help with tech stuff... </h2>
-
+    </div>
+<!--<div id="daily_info" style="width:75%; float: left;">-->
+    <div id="daily_info">
     {% for tutor in tutors %}
     <h2> Name: {{ tutor.name }}<span> is here today from: {{ tutor.availability}}</span></h2>
     <h3> {{ tutor.courses }}</h3>
     <br><br>
     {% endfor %}
+    </div>
+
     <!--need span or div or sumpin-->
+
+<!--<div id="student_sign_in" style="width:25%; float: right;">-->
+    <div id="student_sign_in">
+
     <p>All students please sign in here</p>
     <form action="/student_id" method="post" >
        <!--<button>Student Sign In</button>-->
@@ -30,6 +40,8 @@
         <input type="submit" name="Submit" value="Submit ID" />
 
     </form>
+
+      </div>
 
 <!--NEED TO&ndash;&gt; route the submit button to page for testing-->
 <!--add the database to track star ID-->

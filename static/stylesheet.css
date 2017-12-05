@@ -1,16 +1,27 @@
 body{
-    background-color: deeppink;
+    background-color: #14ff64;
 }
-
-/*h1{*/
-    /*border-color: blueviolet;*/
-    /*border-bottom-width: thick;*/
-    /*color: chartreuse;*/
-/*}*/
 
 h1{
     border-bottom: blueviolet;
     border-bottom-width: thick;
     border-bottom-style: groove;
-    color: chartreuse;
+    color: #db3ec8;
+    font-size: 500%;
+    text-align: center;
+}
+
+#sub_title {
+    font-size: 250%;
+    text-align: center;
+}
+
+#daily_info {
+    column-rule-width: 10px;
+    float: left;
+}
+
+#student_sign_in {
+    column-width: 25px;
+    float: right;"
 }
