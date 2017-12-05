@@ -29,7 +29,7 @@
     <div id="student_sign_in">
 
     <p>All students please sign in here</p>
-    <form action="/student_id" method="post" >
+    <form action="{{ url_for('student_information') }}" method="post" >
        <!--<button>Student Sign In</button>-->
         <label for="studentName">First and Last name:</label>
         <input type="text" name="studentName" size="15" maxlength="40" required="required"/>

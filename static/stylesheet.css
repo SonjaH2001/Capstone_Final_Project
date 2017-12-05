@@ -17,11 +17,11 @@ h1{
 }
 
 #daily_info {
-    column-rule-width: 10px;
+    width: 75%;
     float: left;
 }
 
 #student_sign_in {
-    column-width: 25px;
+    width: 25%;
     float: right;"
 }
