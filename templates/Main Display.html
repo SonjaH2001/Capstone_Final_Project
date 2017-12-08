@@ -8,17 +8,18 @@
 
 </head>
 <body>
+
 <div id="logo">
-<img src="https://www.northcentral.edu/wp-content/uploads/2016/02/academics__distinctive_mctc-logo.jpg" height="100" width="100"/>
-{#needs sizing#}
-    </div>
+    <img src="https://www.northcentral.edu/wp-content/uploads/2016/02/academics__distinctive_mctc-logo.jpg" height="200" width="200"/>
+<!--{#needs sizing#}-->
+</div>
 
 
-{#<h1>The World of Tutor Life...</h1>#}
+<!--{#<h1>The World of Tutor Life...</h1>#}-->
 
 <div id="sub_title">
-<h3>Get some help with tech stuff! </h3>
-    </div>
+    <h3>ITECH tutor drop-in availability</h3>
+</div>
 <!--<div id="daily_info" style="width:75%; float: left;">-->
     <div id="daily_info">
     {% for tutor in tutors %}
@@ -28,11 +29,8 @@
     {% endfor %}
     </div>
 
-    <!--need span or div or sumpin-->
 
-<!--<div id="student_sign_in" style="width:25%; float: right;">-->
-    <div id="student_sign_in">
-
+<div id="student_sign_in">
     <p>All students please sign in here</p>
     <form action="{{ url_for('student_information') }}" method="post" >
        <!--<button>Student Sign In</button>-->
@@ -44,10 +42,16 @@
         <br><br>
         <input type="submit" name="Submit" value="Submit ID" />
 
-    </form>
+    </form><br><br>
+</div>
 
-      </div>
-{#NEED to add MCTC logo#}
+<div id="admin_id">
+    <form action="Admin.html">
+        <label for="admin_id">Go to Admin page: </label>
+        <input type="button" name="Admin page" value="Click here for Admin Page">
+    </form>
+</div>
+<!--{#NEED to add MCTC logo#}-->
 <!--NEED TO&ndash;&gt; route the submit button to page for testing-->
 <!--add the database to track star ID info-->
 <!--add the database to get tutor schedule/daily info-->
