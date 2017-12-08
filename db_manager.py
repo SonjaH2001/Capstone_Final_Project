@@ -1,18 +1,18 @@
 def find_daily_tutors():
     daily_tutors = [{
-        "name": "mason",
+        "name": "Tech Tutor 1",
         "courses": "ITEC 1050, 1100, 1234",
         "availability": "2 - 6"
     },
         {
-            "name": "bhjghj",
-            "courses": "ITEC 1050, 1100, 1234",
+            "name": "Tech Tutor 2",
+            "courses": "ITEC 2950, 1150, 1234",
             "availability": "2 - 6"
         },
         {
-            "name": "werwer",
-            "courses": "ITEC 1050, 1100, 1234",
-            "availability": "2 - 6"
+            "name": "Tech Tutor 3",
+            "courses": "ITEC 2950, 1150, 1234",
+            "availability": "10 - 12"
         }, ]
     return daily_tutors
 
