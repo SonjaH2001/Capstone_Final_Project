@@ -15,8 +15,6 @@
 </div>
 
 
-<!--{#<h1>The World of Tutor Life...</h1>#}-->
-
 <div id="sub_title">
     <h3>ITECH tutor drop-in availability</h3>
 </div>
@@ -35,26 +33,28 @@
     <form action="{{ url_for('student_information') }}" method="post" >
        <!--<button>Student Sign In</button>-->
         <label for="studentName">First and Last name:</label>
-        <input type="text" name="studentName" size="15" maxlength="40" required="required"/>
+        <input type="text" name="studentName" id="studentName" size="15" maxlength="40" required="required"/>
         <br><br>
         <label for="starId">Star ID:</label>
-        <input type="password" name="starId" size="15" maxlength="8" required="required"/>
+        <input type="password" name="starId" id="starId" size="15" maxlength="8" required="required"/>
         <br><br>
         <input type="submit" name="Submit" value="Submit ID" />
 
-    </form><br><br>
+    </form><br><br><br><br>
 </div>
 
-<div id="admin_id">
-    <form action="Admin.html">
-        <label for="admin_id">Go to Admin page: </label>
-        <input type="button" name="Admin page" value="Click here for Admin Page">
-    </form>
-</div>
-<!--{#NEED to add MCTC logo#}-->
-<!--NEED TO&ndash;&gt; route the submit button to page for testing-->
+<a href="{{ url_for('login') }}">Click <em>here</em> for admin page</a>
+
+<!--<div id="admin_id">-->
+    <!--<form action="{{ url_for('login') }}">-->
+        <!--<label for="admin_id">Go to Admin page: </label>-->
+        <!--<input type="button" name="Admin access:" value=" Admin Login Page">-->
+    <!--</form>-->
+<!--</div>-->
+<!--{#NEED to fix MCTC logo#}-->
 <!--add the database to track star ID info-->
 <!--add the database to get tutor schedule/daily info-->
+<!--object oriented????-->
 
 <!--and......... so much more.-->
 
