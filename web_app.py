@@ -29,3 +29,8 @@ if __name__ == '__main__':
     # DB_orm.DB_setup()
     # DB_manager.create_db()
     app.run(debug=True) #kind of like the web server
+
+
+
+# TOOODOOO:
+# clock api  https://dev.fitbit.com/reference/device-api/clock/#variable-clock-
