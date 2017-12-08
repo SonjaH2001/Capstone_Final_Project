@@ -44,3 +44,18 @@ def save_student_data(name, star, timestamp):
     #datetime.now is an object, when stored in a database need to parse
     #in the sqlite.3 connect google python sqlite datetime
     # (connection string   filepath,detect_types = sqlite3.parse_decltypes)
+
+
+# example of search for day column
+# >>> from datetime import datetime
+# >>> d = datetime.now()
+# >>> d.day
+# 8
+# >>> d.weekday
+# <built-in method weekday of datetime.datetime object at 0x0000000002D7E2D0>
+# >>> d.weekday()
+# 4
+# >>> if d.weekday() == 0:
+# ...     col_day = "M"
+# ...
+# >>> "SELECT * FROM TUTORS WHERE ? does not eq null"
