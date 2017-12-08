@@ -11,6 +11,11 @@ h1{
     /*text-align: center;*/
 }
 
+#logo {
+    height: 5%;
+    width: 5%;
+}
+
 #sub_title {
     font-size: 250%;
     text-align: center;
