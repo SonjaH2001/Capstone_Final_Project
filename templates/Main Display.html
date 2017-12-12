@@ -10,23 +10,19 @@
 <body>
 
 <div id="logo">
-    <img src=""/>
-<!--{#needs sizing#}-->
+    <img src="https://assets.gradreports.com/assets/school_logos/square/mctc.png"/>
 </div>
 
-
 <div id="sub_title">
-    <h3>I-TECH tutor drop-in availability</h3>
+    <p>ITECH Tutor Drop-in Hours:</p>
 </div>
 <!--<div id="daily_info" style="width:75%; float: left;">-->
     <div id="daily_info">
     {% for tutor in tutors %}
     <h2> Name: {{ tutor.name }}<span> is here today from: {{ tutor.availability}}</span></h2>
     <h3> {{ tutor.courses }}</h3>
-    <br><br>
     {% endfor %}
     </div>
-
 
 <div id="student_sign_in">
     <p>All students please sign in here</p>
@@ -40,10 +36,10 @@
         <br><br>
         <input type="submit" name="Submit" value="Submit ID" />
 
-    </form><br><br><br><br>
+    </form><br>
 </div>
 
-<a href="{{ url_for('login') }}">Click <em>here</em> for admin page</a>
+<!--<a href="{{ url_for('login') }}">Click <em>here</em> for admin page</a>-->
 
 <!--<div id="admin_id">-->
     <!--<form action="{{ url_for('login') }}">-->

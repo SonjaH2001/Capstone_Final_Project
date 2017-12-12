@@ -1,27 +1,46 @@
 body{
-    background-color: #14ff64;
+    background-color: whitesmoke;
+}
+#logo{
+    background-color: purple;
 }
 
 h1{
     border-bottom: blueviolet;
-    border-bottom-width: thick;
-    border-bottom-style: groove;
-    color: #db3ec8;
+    /*border-bottom-width: thick;*/
+    /*border-bottom-style: groove;*/
+    /*color: #db3ec8;*/
     font-size: 500%;
     text-align: center;
 }
 
 #sub_title {
     font-size: 250%;
-    text-align: center;
+    font-family: "Segoe UI Emoji";
+    text-align: left;
+    padding-left: 5%;
+    float: left;
+    width: 75%;
+    text-decoration: underline;
 }
 
 #daily_info {
-    width: 75%;
+    font-family: "Segoe UI Emoji";
+    padding-left: 5%;
+    width: 50%;
     float: left;
 }
 
 #student_sign_in {
     width: 25%;
-    float: right;"
+    float: right;
+    /*border: double;*/
+    border-bottom: double;
+    border-left: double;
+    border-top: double;
+    text-align: right;
+    padding-right: 15%;
+    font-size: 150%;
+
+
 }
