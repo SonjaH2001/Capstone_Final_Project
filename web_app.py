@@ -5,7 +5,7 @@ from flask import Flask,render_template, redirect, url_for
 from flask import request
 from datetime import datetime
 
-from db_manager import find_daily_tutors, save_student_data, create_db
+from db_manager import find_daily_tutors #save_student_data, create_db
 
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ def student_information():
     StudentName = request.form['studentName']#gets from html form/name
     StarID = request.form['starId']#gets html form/ name
     dateTime = datetime.now()   #get the time NOW!
-    save_student_data(StudentName, StarID, datetime)
+    # save_student_data(StudentName, StarID, datetime)
 
     return redirect(url_for('index'))
 
@@ -36,7 +36,7 @@ def admin():
 
 
 if __name__ == '__main__':
-    create_db()# function creates DB when program starts
+    # create_db()# function creates DB when program starts
     app.run(debug=True) #kind of like the web server
 
 
