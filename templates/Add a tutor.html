@@ -7,21 +7,21 @@
 <body>
 
 <h4> Enter new tutor information.</h4>
-<form action="confirm page">
-    <label>NAME:</label>
-    <input type="text" name="First and Last name" maxlength="45" required="required">
-    <label>Course(s):</label>
-    <input type="text" name="Course Number/Name" maxlength="50" required="required">
-    <label>Monday:</label>
-    <input type="text" name="Start Time - End Time" maxlength="30">
-    <label>Tuesday:</label>
-    <input type="text" name="Start Time - End Time" maxlength="30">
-    <label>Wednesday:</label>
-    <input type="text" name="Start Time - End Time" maxlength="30">
-    <label>Thursday:</label>
-    <input type="text" name="Start Time - End Time" maxlength="30">
-    <label>Friday:</label>
-    <input type="text" name="Start Time - End Time" maxlength="30">
+<form action="{{ url_for('add_tutor') }}" method="post">
+    <label>First and Last name:</label>
+    <input type="text" name="name" maxlength="45" required="required">
+    <label>Course Number/ Name:</label>
+    <input type="text" name="course_info" maxlength="50" required="required">
+    <label>Monday start-end time:</label>
+    <input type="text" name="m_time" maxlength="30">
+    <label>Tuesday start-end time:</label>
+    <input type="text" name="t_time" maxlength="30">
+    <label>Wednesday start-end time:</label>
+    <input type="text" name="w_time" maxlength="30">
+    <label>Thursday start-end time:</label>
+    <input type="text" name="tr_time" maxlength="30">
+    <label>Friday start-end time:</label>
+    <input type="text" name="f_time" maxlength="30">
     <input type="submit" value="Submit">
     </form>
 {#        submit routes to order-saved, but no info#}

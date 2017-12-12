@@ -26,19 +26,30 @@ def find_daily_tutors():
 #function to set up database, call that when progrm starts up
 #if name = main, the entrypoint check cookie
 
-# def create_db():  # call when start up the server
-#     print("--->creating the database<---")  # for testing
-#
-#     conn_man = sql.connect(sqlite_file)  # not a great way to do this, needs framework
-#     cursor = conn_man.cursor()
-#     with open("schema.sql", "r") as schema:
-#         create_table = schema.read()
-#         cursor.executescript(create_table)
-#         save_student_data()
-#
-#     # cursor.commit()
-#     conn_man.close()
+def create_db():  # call when start up the server
+    print("--->creating the database<---")  # for testing
 
+    conn_man = sql.connect(sqlite_file)  # not a great way to do this, needs framework
+    cursor = conn_man.cursor()
+    with open("schema.sql", "r") as schema:
+        create_table = schema.read()
+        cursor.executescript(create_table)
+        # save_student_data()
+
+    # cursor.commit()
+    conn_man.close()
+
+def save_tutor_data(name, courses, monday, tuesday, wednesday, thursday, friday):
+    print("adding a tutor...")
+    #save information from the add-tutor page to the database
+
+    add_query = "INSERT INTO tutor VALUES (NULL, ?, ?, ?, ?, ? ,?, ?)"
+    conn_man = sql.connect(sqlite_file)
+    cursor = conn_man.cursor()
+    cursor.execute(add_query, (name, courses, monday, tuesday, wednesday,thursday,friday))
+
+    conn_man.commit()
+    conn_man.close()
 
 # def save_student_data():
 #     print("saving to the database...")

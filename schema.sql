@@ -26,6 +26,13 @@ create table student_info (
 );
 INSERT INTO tutor (name, courses, monday, tuesday, wednesday,thursday,friday)
   VALUES ("Iggy Pop", "1150","", "1-3", "", "", "10-11"),
-    ("O.D.B.", "", "1150", "6-7", "","", "12-3"),
-    ("Joe Strummer", "guitar for nerds", "1-2", "", "", "9-4",""),
-    ("Nick Cave", "piano for nerds", "", "6-10", "","1-2", "");
+ ("O.D.B.", "", "1150", "6-7", "","", "12-3");
+
+-- INSERT INTO tutor (name, courses, monday, tuesday, wednesday,thursday,friday)
+--   VALUES ("O.D.B.", "", "1150", "6-7", "","", "12-3");
+--
+-- INSERT INTO tutor (name, courses, monday, tuesday, wednesday,thursday,friday)
+--   VALUES ("Joe Strummer", "guitar for nerds", "1-2", "", "", "9-4","");
+--
+-- INSERT INTO tutor (name, courses, monday, tuesday, wednesday,thursday,friday)
+--   VALUES ("Nick Cave", "piano for nerds", "", "6-10", "","1-2", "");
