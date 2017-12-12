@@ -5,10 +5,15 @@
     <title>Admin Menu options</title>
 </head>
 <body>
-<h1>Please choose from the following options...</h1>
-<p>Add a tutor.
-change tutor information.
-delete a tutor.</p>
+<h1>Admin ONLY functions</h1>
+<p>Please click on the appropriate link...</p>
+<ul>
+    <li><a href="{{ url_for('index') }}"><em>Click Here</em>to ADD a tutor</a></li>
+    <li><a href="{{ url_for('index') }}"><em>Click Here</em>to UPDATE tutor information</a></li>
+    <li><a href="{{ url_for('index') }}"><em>Click Here</em>to DELETE a tutor</a></li>
+</ul>
+
+<a href="{{ url_for('index') }}">Click <em>here</em> for home screen</a>
 {#def main():#}
 {#    # again = "Y" #set a value for flow control#}
 {#    end = input(" enter 0 to quit, anything else to continue: ")#}
