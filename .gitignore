@@ -1,4 +1,4 @@
 .idea
 __pycache__/
 docs/_build/
-db_manager.py
+
