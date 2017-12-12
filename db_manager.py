@@ -42,7 +42,7 @@ def find_daily_tutors():
 
 # def save_student_data():
 #     print("saving to the database...")
-#     #TODO: do this
+#     #TOoDO: do this
 #     student_list = []
 #     student_list.append([1, "Seasonal Sensation", 4.30])
 #     student_list.append([2, "Suger Hill Gang", 6.70])

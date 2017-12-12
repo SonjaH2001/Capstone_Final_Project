@@ -28,9 +28,9 @@ def student_information():
 def login():
     return  render_template('login.html')
 
-@app.route('/admin')
+@app.route('/admin_menu')
 def admin():
-    pass
+    return render_template('admin_menu.html')
 
 # TTTTToDao:  add all the admin pages and routes, don't do actual login
 

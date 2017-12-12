@@ -12,24 +12,16 @@
 
 <body>
 <p>This is the admin page, needs a login and password and functions</p>
-    <form action="http://127.0.0.1:5000/login" method="post">
+    <form action="http://127.0.0.1:5000/login">
     <p>Username:
         <input type="text" name="username" maxlength="30" required="required" /><br></p>
     <p>Password:
         <input type="password" name="password" minlength="8" maxlength="8" required="required" /></p>
     <p><input type="submit" name="submit" value="submit information">
     </p>
+
+        <a href="{{ url_for('admin') }}">Click <em>here</em> for menue</a>
 </form>
 
-    <!--the following is for inspiration only-->
-
-{#    <form method="POST" action="/order_saved">#}
-{#    <select name='cookie_type'>#}
-{#    {% for cookie in cookies %}#}
-{#    <option value="{{ cookie[0] }}">{{ cookie[1], cookie[2]}}</option>#}
-{#    {%  endfor %}#}
-{#    </select>#}
-{#    </form>#}
-{#    order information{{ order }}#}
 
 </body>
