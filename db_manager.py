@@ -23,7 +23,6 @@ def find_daily_tutors():
         daily_tutors.append(tutor)
     # return daily_tutors
 
-    # conn_man.commit()
     conn_man.close()
     print(rows)
     print(daily_tutors)
