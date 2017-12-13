@@ -4,22 +4,46 @@ import sqlite3 as sql
 sqlite_file = 'itech_tutor_program_db.sqlite'
 
 def find_daily_tutors():
-    daily_tutors = [{
-        "name": "Tech Tutor 1",
-        "courses": "ITEC 1050, 1100, 1234",
-        "availability": "2 - 6"
-    },
-        {
-            "name": "Tech Tutor 2",
-            "courses": "ITEC 2950, 1150, 1234",
-            "availability": "2 - 6"
-        },
-        {
-            "name": "Tech Tutor 3",
-            "courses": "ITEC 2950, 1150, 1234",
-            "availability": "10 - 12"
-        }, ]
+    print("checking...")
+
+    # get current day using datetime, blah blah List of strings with weekday number
+    day = "tuesday"
+    find_tutor_query = "SELECT name, courses, {day} FROM tutor WHERE {day} is NOT NULL ".format(day=day)
+    conn_man = sql.connect(sqlite_file)
+    cursor = conn_man.cursor()
+    cursor.execute(find_tutor_query)
+    rows = cursor.fetchall()
+    daily_tutors = []
+    for row in rows:
+        tutor = {
+            "name": row[0],
+            "courses": row[1],
+            "availability": row[2]
+        }
+        daily_tutors.append(tutor)
+    # return daily_tutors
+
+    # conn_man.commit()
+    conn_man.close()
+    print(rows)
+    print(daily_tutors)
     return daily_tutors
+#     daily_tutors = [{
+#         "name": "Tech Tutor 1",
+#         "courses": "ITEC 1050, 1100, 1234",
+#         "availability": "2 - 6"
+#     },
+#         {
+#             "name": "Tech Tutor 2",
+#             "courses": "ITEC 2950, 1150, 1234",
+#             "availability": "2 - 6"
+#         },
+#         {
+#             "name": "Tech Tutor 3",
+#             "courses": "ITEC 2950, 1150, 1234",
+#             "availability": "10 - 12"
+#         }, ]
+#     return daily_tutors
 
 #replace with a database quesry
 #ned to build these tables for the search
