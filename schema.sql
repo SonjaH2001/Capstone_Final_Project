@@ -26,7 +26,7 @@ create table student_info (
 );
 INSERT INTO tutor (name, courses, monday, tuesday, wednesday,thursday,friday)
   VALUES ("Iggy Pop", "1150","", "1-3", "", "", "10-11"),
- ("O.D.B.", "", "1150", "6-7", "","", "12-3");
+ ("O.D.B.", "2905", "1-2", "6-7", "","2-2:02", "12-3");
 
 -- INSERT INTO tutor (name, courses, monday, tuesday, wednesday,thursday,friday)
 --   VALUES ("O.D.B.", "", "1150", "6-7", "","", "12-3");

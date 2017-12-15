@@ -1,6 +1,6 @@
 import sqlite3 as sql
 
-# sqlite_file = 'itech_tutor_program_db.sqlite'
+# sqlite_file = 'itech_tutor_program_db.sq'
 sqlite_file = 'itech_tutor_program_db.sqlite'
 
 def find_daily_tutors():
@@ -106,3 +106,4 @@ def save_tutor_data(name, courses, monday, tuesday, wednesday, thursday, friday)
 # ...     col_day = "M"
 # ...
 # >>> "SELECT * FROM TUTORS WHERE ? does not eq null"
+# create_db()

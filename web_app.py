@@ -11,8 +11,8 @@ app = Flask(__name__)
 
 @app.route('/')#route to home page
 def index():
-    tutors = find_daily_tutors()#gets the array of dictionaries that have the data
-    return render_template('Main Display.html', tutors=tutors)#displays the data on the html page
+    # tutors = find_daily_tutors()#gets the array of dictionaries that have the data
+    return render_template('Main Display.html') #, tutors=tutors)#displays the data on the html page
 
 @app.route('/student_sign_in', methods=["post"])
 #the main page has a form that posts to here
@@ -54,7 +54,7 @@ def add_tutor():
 
 
 if __name__ == '__main__':
-    create_db()# function creates DB when program starts
+    # create_db()# function creates DB when program starts
     app.run(debug=True) #kind of like the web server
 
 
